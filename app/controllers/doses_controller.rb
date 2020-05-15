@@ -6,8 +6,8 @@ class DosesController < ApplicationController
     if @dose.save
       redirect_to cocktail_path(@cocktail)
     else
-      @description = Description.new
-      render "cocktails/show"
+      # @description = Description.new
+      render 'new'
     end
   end
 
